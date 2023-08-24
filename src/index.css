@@ -11,27 +11,11 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  --black-1: hsl(244, 17%, 19%);
-  --black-2: hsl(245, 16%, 16%);
-  --black-3: hsl(210, 11%, 15%);
-  --yellow-1: hsl(53, 100%, 78%);
-  --yellow-2: hsl(56, 100%, 72%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(240, 100%, 99%);
-  --white-3: hsl(231, 41%, 97%);
-  --grey: hsl(245, 17%, 27%);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --transition: 0.25s ease;
-  --transition-2: 0.5s ease-out;
-
-  --section-padding: 80px;
-  --section-margin: 80px;
 }
 
 a {
