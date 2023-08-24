@@ -44,11 +44,11 @@ function Todo({ todo, onToggle, onDelete, onEdit }: TodoProps) {
             type="text"
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
-            className="flex-grow px-3 py-2 text-gray-900 bg-gray-200 border rounded focus:border-blue-500 focus:outline-non"
+            className="flex-grow py-1 pl-1 text-gray-900 bg-gray-200 rounded focus:border-blue-500 focus:outline-non"
           />
         </div>
       ) : (
-        <div className="flex-grow">
+        <div className="flex-grow pr-3">
           <span className="text-gray-950">{todo.text}</span>
         </div>
       )}

@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="p-4 bg-white rounded-md shadow min-w-md">
+      <div className="p-4 bg-white rounded-md shadow min-w-[450px]">
         <h1 className="flex justify-center mt-6 mb-4 text-2xl font-semibold text-gray-950">
           Todo List
         </h1>
