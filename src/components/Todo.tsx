@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaPen, FaTrash, FaCheck, FaX } from "react-icons/fa6";
 
 interface TodoProps {
@@ -8,7 +8,7 @@ interface TodoProps {
   onEdit: (id: number, newText: string) => void;
 }
 
-const Todo: React.FC<TodoProps> = ({ todo, onToggle, onDelete, onEdit }) => {
+function Todo({ todo, onToggle, onDelete, onEdit }: TodoProps) {
   const [isEditing, setIsEditing] = useState(false);
   const [editedText, setEditedText] = useState(todo.text);
 
@@ -57,7 +57,7 @@ const Todo: React.FC<TodoProps> = ({ todo, onToggle, onDelete, onEdit }) => {
           <>
             <button
               onClick={handleSave}
-              className="ml-1 text-green-600 bg-transparent border-gray-500 hover:border-green-600"
+              className="ml-2 text-green-600 bg-transparent border-gray-500 hover:border-green-600"
             >
               <FaCheck />
             </button>
@@ -72,7 +72,7 @@ const Todo: React.FC<TodoProps> = ({ todo, onToggle, onDelete, onEdit }) => {
           <>
             <button
               onClick={handleEdit}
-              className="ml-1 text-blue-600 bg-transparent border-gray-500"
+              className="ml-2 text-blue-600 bg-transparent border-gray-500"
             >
               <FaPen />
             </button>
@@ -87,6 +87,6 @@ const Todo: React.FC<TodoProps> = ({ todo, onToggle, onDelete, onEdit }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Todo;

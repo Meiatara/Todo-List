@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Todo from "./components/Todo";
 import { FaPlus } from "react-icons/fa6";
 
-const App: React.FC = () => {
+function App() {
   const [todos, setTodos] = useState<
     { id: number; text: string; completed: boolean }[]
-  >([]);
+  >([
+    { id: 1, text: "Go to work", completed: true },
+    { id: 2, text: "Finish work project", completed: true },
+    { id: 3, text: "Go for a run", completed: false },
+  ]);
   const [newTodoText, setNewTodoText] = useState("");
 
   const addTodo = () => {
@@ -67,6 +71,6 @@ const App: React.FC = () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;
